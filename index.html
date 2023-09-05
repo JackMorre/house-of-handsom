@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Vidaloka&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="hero" id="hero">
+      <header>
+        <p>LOGO</p>
+        <button class="mob-nav-btn">
+          <svg
+            class="menu-icon"
+            xmlns="http://www.w3.org/2000/svg"
+            height="2em"
+            viewBox="0 0 448 512"
+          >
+            <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+            <path
+              d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
+            />
+          </svg>
+          <svg
+            class="close-icon"
+            xmlns="http://www.w3.org/2000/svg"
+            height="2em"
+            viewBox="0 0 384 512"
+          >
+            <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+            <path
+              d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"
+            />
+          </svg>
+        </button>
+        <nav class="header-nav">
+          <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about-us">About Us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#testimonials">Testimonals</a></li>
+            <li><a href="#contact-us">Contact</a></li>
+          </ul>
+          <a class="book-btn" href="#">Book now!</a>
+          <div class="socials">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="1.8em"
+              viewBox="0 0 512 512"
+            >
+              <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+              <path
+                d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="2em"
+              viewBox="0 0 448 512"
+            >
+              <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+              <path
+                d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+              />
+            </svg>
+          </div>
+        </nav>
+      </header>
+      <div class="hero-text">
+        <h1>MEN'S BARBERING IN THE BEAUTIFUL GOLDEN TRIANGLE</h1>
+        <a href="#">Check Our Services!</a>
+      </div>
+    </div>
+    <main>
+      <section class="section about-us" id="about-us">
+        <h2>About Us</h2>
+        <div class="about-text-c">
+          <p>
+            Established in 2017, House of Handsome Norwich is a unique
+            barbershop, situated in the beautiful Golden Triangle.
+          </p>
+          <p>
+            What makes us different? Our location is unique in that there are no
+            long queues, unlike city barbers, and we have parking literally
+            outside the front door.
+          </p>
+          <p>
+            The name House of Handsome is inspired by our very own resident
+            French Bulldogs, Frank and Fred. We are a dog friendly barbers and
+            the shop regularly has visits from our clients 4-legged friends.
+          </p>
+        </div>
+      </section>
+      <section class="section crew" id="crew">
+        <h2>Crew</h2>
+        <div class="crew-container">
+          <div class="max-crew-container">
+            <div class="crew-card" data-viewing="true" data-number="0">
+              <div class="crew-card-c">
+                <div class="crew-img-c">
+                  <img
+                    class="crew-img-one"
+                    src="/linkedin-sales-solutions-pAtA8xe_iVM-unsplash.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="crew-text-c">
+                  <h3 class="crew-name">Neil</h3>
+                  <p>
+                    Neil is the shops owner and the most experienced barber with
+                    over 20 years experience. He has worked at various barbers
+                    in Norwich, as well as in Australia.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="crew-card blue" data-viewing="false" data-number="1">
+              <div class="crew-img-c">
+                <img
+                  class="crew-img-two"
+                  src="/charlie-green-3JmfENcL24M-unsplash.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="crew-text-c">
+                <h3 class="crew-name">Gregson</h3>
+                <p>
+                  Gregson is the newest member of the House of Handsome Norwich
+                  team and joins us on Sunday's at the shop. Also a graduate
+                  from The London School of Barbering, he is always perfecting
+                  techniques.
+                </p>
+              </div>
+            </div>
+            <div class="crew-card" data-viewing="false" data-number="2">
+              <div class="crew-img-c">
+                <img
+                  class="crew-img-two"
+                  src="/rayul-_M6gy9oHgII-unsplash.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="crew-text-c">
+                <h3 class="crew-name">Gregson</h3>
+                <p>
+                  Gregson is the newest member of the House of Handsome Norwich
+                  team and joins us on Sunday's at the shop. Also a graduate
+                  from The London School of Barbering, he is always perfecting
+                  techniques.
+                </p>
+              </div>
+            </div>
+          </div>
+          <svg
+            class="leftArrow"
+            xmlns="http://www.w3.org/2000/svg"
+            height="2em"
+            viewBox="0 0 320 512"
+          >
+            <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+            <path
+              d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z"
+            />
+          </svg>
+          <svg
+            class="right-Arrow"
+            xmlns="http://www.w3.org/2000/svg"
+            height="2em"
+            viewBox="0 0 320 512"
+          >
+            <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+            <path
+              d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"
+            />
+          </svg>
+        </div>
+      </section>
+      <section class="services" id="services">
+        <h2>Services</h2>
+        <div class="service-card-c">
+          <div class="services-card" data-set="1">
+            <div class="basic-info">
+              <svg
+                class="icon"
+                xmlns="http://www.w3.org/2000/svg"
+                height="1em"
+                viewBox="0 0 320 512"
+              >
+                <path
+                  d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"
+                />
+              </svg>
+              <h3 class="title">Men's Cut</h3>
+              <p>£25</p>
+            </div>
+            <div class="more-info">
+              <p>The best haircut that we can offer!</p>
+              <a>Book!</a>
+            </div>
+          </div>
+          <div class="services-card" data-set="1">
+            <div class="basic-info">
+              <svg
+                class="icon"
+                xmlns="http://www.w3.org/2000/svg"
+                height="1em"
+                viewBox="0 0 320 512"
+              >
+                <path
+                  d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"
+                />
+              </svg>
+              <h3 class="title">Student Cut</h3>
+              <p>£20</p>
+            </div>
+            <div class="more-info">
+              <p>
+                The best haircut that we can offer for anyone with a stident ID!
+              </p>
+              <a>Book!</a>
+            </div>
+          </div>
+          <div class="services-card" data-set="1">
+            <div class="basic-info">
+              <svg
+                class="icon"
+                xmlns="http://www.w3.org/2000/svg"
+                height="1em"
+                viewBox="0 0 320 512"
+              >
+                <path
+                  d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"
+                />
+              </svg>
+              <h3 class="title">Grey's Cut</h3>
+              <p>£20</p>
+            </div>
+            <div class="more-info">
+              <p>
+                The best haircut that we can offer for people over the age of
+                55!
+              </p>
+              <a>Book!</a>
+            </div>
+          </div>
+          <div class="services-card" data-set="1">
+            <div class="basic-info">
+              <svg
+                class="icon"
+                xmlns="http://www.w3.org/2000/svg"
+                height="1em"
+                viewBox="0 0 320 512"
+              >
+                <path
+                  d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"
+                />
+              </svg>
+              <h3 class="title">Kids Cut</h3>
+              <p>£20</p>
+            </div>
+            <div class="more-info">
+              <p>
+                The best haircut that we can offer for anyone under the age of
+                12!
+              </p>
+              <a>Book!</a>
+            </div>
+          </div>
+          <div class="services-card" data-set="1">
+            <div class="basic-info">
+              <svg
+                class="icon"
+                xmlns="http://www.w3.org/2000/svg"
+                height="1em"
+                viewBox="0 0 320 512"
+              >
+                <path
+                  d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"
+                />
+              </svg>
+              <h3 class="title">Beard Trim</h3>
+              <p>£15</p>
+            </div>
+            <div class="more-info">
+              <p>
+                Basic trim for your beard so you leave the barbers looking the
+                best you can!
+              </p>
+              <a>Book!</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section gallery" id="testimonials">
+        <h2>Testimonals</h2>
+        <div class="test-c">
+          <div class="test-card">
+            <p class="test-quote">
+              "It is always a pleasure to go in and see Neale and the rest of
+              the friendly crew.""
+            </p>
+            <p class="test-name">-Stuart</p>
+          </div>
+          <div class="test-card">
+            <p class="test-quote">
+              "Really impressed with the incredibly high standard of
+              cleanliness."
+            </p>
+            <p class="test-name">-Lee</p>
+          </div>
+          <div class="test-card">
+            <p class="test-quote">"The best barbershop in Norwich!"</p>
+            <p class="test-name">-Jack</p>
+          </div>
+        </div>
+      </section>
+      <!-- <section class="section testimonials">
+        <h2>Testimonals</h2>
+        <div class="test-c">
+          <div class="test-card">
+            <p class="test-quote">
+              "It is always a pleasure to go in and see Neale and the rest of
+              the friendly crew.
+            </p>
+            <p class="test-name">Stuart</p>
+          </div>
+          <div class="test-card">
+            <p class="test-quote">
+              Awesome haircut and really impressed with the incredibly high
+              standard of cleanliness
+            </p>
+            <p class="test-name">Lee</p>
+          </div>
+          <div class="test-card">
+            <p class="test-quote">The best barbershop in Norwich!</p>
+            <p class="test-name">Jack</p>
+          </div>
+        </div>
+      </section> -->
+      <section class="section contact-us" id="contact-us">
+        <h2>Contact Us</h2>
+        <div class="contact-us-c">
+          <p>
+            17 Gloucester Street, Norwich, Norfolk, England, United Kingdom, NR2
+            2DX
+          </p>
+          <p>houseofhandsomenorwich@gmail.com</p>
+          <p>01603 762 177</p>
+        </div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d453.62144355537595!2d1.2774764395448417!3d52.622978331095794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d9e15a4618090b%3A0x9035c64bc4fb9d08!2sHouse%20of%20Handsome!5e0!3m2!1sen!2suk!4v1693738082308!5m2!1sen!2suk"
+          width="100%"
+          height="300"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </section>
+    </main>
+    <footer>
+      <h4>LOGO</h4>
+      <nav>
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about-us">About Us</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#contact-us">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="socials">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          height="1.5em"
+          viewBox="0 0 512 512"
+        >
+          <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+          <path
+            d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"
+          />
+        </svg>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          height="1.5em"
+          viewBox="0 0 448 512"
+        >
+          <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+          <path
+            d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+          />
+        </svg>
+      </div>
+    </footer>
+  </body>
+  <script src="/script.js"></script>
+</html>
