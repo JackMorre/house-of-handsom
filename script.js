@@ -15,6 +15,11 @@ const bodyEl = document.querySelector("body");
 const btnParent = headerBtn.parentElement;
 
 const links = document.querySelectorAll("nav ul a");
+
+const heroCTA = document.querySelector(".hero-btn");
+
+heroCTA.addEventListener("click", clickHandler);
+
 for (const link of links) {
   link.addEventListener("click", clickHandler);
 }
@@ -44,18 +49,14 @@ serviceCards.forEach((card) => {
   card.addEventListener("click", function (e) {
     e.preventDefault();
     const currentCard = e.target.closest(".basic-info");
-    console.log(currentCard.classList.contains("basic-info"));
+
+    console.log(currentCard);
 
     if (currentCard.classList.contains("turn") === true) {
       currentCard.classList.remove("turn");
-    } else {
+    } else if (currentCard.classList.contains("turn") === false) {
       currentCard.classList.add("turn");
-    }
-    // if (currentCard.style.display === "block") {
-    //   currentCard.style.display = "none";
-    // } else {
-    //   currentCard.style.display = "block";
-    // }
+    } else return;
 
     const panel = currentCard.nextElementSibling;
     if (panel.style.height) {
@@ -64,7 +65,6 @@ serviceCards.forEach((card) => {
       currentCard.parentElement.classList.remove("open");
       // panel.style.padding = null;
     } else {
-      console.log(currentCard.parentElement);
       panel.style.height = panel.scrollHeight + "px";
       currentCard.style.marginBottom = "1rem";
       currentCard.parentElement.classList.add("open");
@@ -135,3 +135,32 @@ rightArrow.addEventListener("click", (e) => {
   e.preventDefault();
   clickArrow("right");
 });
+
+const turnServicesOn = function () {
+  Array.from(document.querySelectorAll(".basic-info")).forEach((element) => {
+    const panel = element.nextElementSibling;
+    if (this.screen.width > 640) {
+      if (element.classList.contains("turn") === true) {
+      } else if (element.classList.contains("turn") === false) {
+        element.classList.add("turn");
+      } else return;
+
+      if (panel.style.height) {
+        // panel.style.padding = null;
+      } else {
+        // panel.style.height = panel.scrollHeight + "px";
+        // element.style.marginBottom = "1rem";
+        element.parentElement.classList.add("open");
+        // panel.style.padding = "0 0 1rem 0";
+      }
+    } else {
+      element.classList.remove("turn");
+      panel.style.height = null;
+      element.style.marginBottom = "0px";
+      element.parentElement.classList.remove("open");
+    }
+  });
+};
+
+turnServicesOn();
+window.addEventListener("resize", turnServicesOn);

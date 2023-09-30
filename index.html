@@ -44,8 +44,8 @@
           <ul>
             <li><a href="#hero">Home</a></li>
             <li><a href="#about-us">About Us</a></li>
+            <li><a href="#crew">Crew</a></li>
             <li><a href="#services">Services</a></li>
-            <li><a href="#">Gallery</a></li>
             <li><a href="#testimonials">Testimonals</a></li>
             <li><a href="#contact-us">Contact</a></li>
           </ul>
@@ -76,27 +76,36 @@
       </header>
       <div class="hero-text">
         <h1>MEN'S BARBERING IN THE BEAUTIFUL GOLDEN TRIANGLE</h1>
-        <a href="#">Check Our Services!</a>
+        <a class="hero-btn" href="#services">Check Our Services!</a>
       </div>
     </div>
     <main>
-      <section class="section about-us" id="about-us">
+      <section class="about-us" id="about-us">
         <h2>About Us</h2>
         <div class="about-text-c">
-          <p>
-            Established in 2017, House of Handsome Norwich is a unique
-            barbershop, situated in the beautiful Golden Triangle.
-          </p>
-          <p>
-            What makes us different? Our location is unique in that there are no
-            long queues, unlike city barbers, and we have parking literally
-            outside the front door.
-          </p>
-          <p>
-            The name House of Handsome is inspired by our very own resident
-            French Bulldogs, Frank and Fred. We are a dog friendly barbers and
-            the shop regularly has visits from our clients 4-legged friends.
-          </p>
+          <div class="inner-container">
+            <p>
+              Established in 2017, House of Handsome Norwich is a unique
+              barbershop, situated in the beautiful Golden Triangle.
+            </p>
+            <p>
+              What makes us different? Our location is unique in that there are
+              no long queues, unlike city barbers, and we have parking literally
+              outside the front door.
+            </p>
+            <p>
+              The name House of Handsome is inspired by our very own resident
+              French Bulldogs, Frank and Fred. We are a dog friendly barbers and
+              the shop regularly has visits from our clients 4-legged friends.
+            </p>
+          </div>
+          <div class="about-img-c">
+            <img
+              src="/about_us_photo.jpg"
+              alt="inside of the barbers"
+              srcset=""
+            />
+          </div>
         </div>
       </section>
       <section class="section crew" id="crew">
@@ -123,39 +132,43 @@
               </div>
             </div>
             <div class="crew-card blue" data-viewing="false" data-number="1">
-              <div class="crew-img-c">
-                <img
-                  class="crew-img-two"
-                  src="/charlie-green-3JmfENcL24M-unsplash.jpg"
-                  alt=""
-                />
-              </div>
-              <div class="crew-text-c">
-                <h3 class="crew-name">Gregson</h3>
-                <p>
-                  Gregson is the newest member of the House of Handsome Norwich
-                  team and joins us on Sunday's at the shop. Also a graduate
-                  from The London School of Barbering, he is always perfecting
-                  techniques.
-                </p>
+              <div class="crew-card-c">
+                <div class="crew-img-c">
+                  <img
+                    class="crew-img-two"
+                    src="/charlie-green-3JmfENcL24M-unsplash.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="crew-text-c">
+                  <h3 class="crew-name">Gregson</h3>
+                  <p>
+                    Gregson is the newest member of the House of Handsome
+                    Norwich team and joins us on Sunday's at the shop. Also a
+                    graduate from The London School of Barbering, he is always
+                    perfecting techniques.
+                  </p>
+                </div>
               </div>
             </div>
             <div class="crew-card" data-viewing="false" data-number="2">
-              <div class="crew-img-c">
-                <img
-                  class="crew-img-two"
-                  src="/rayul-_M6gy9oHgII-unsplash.jpg"
-                  alt=""
-                />
-              </div>
-              <div class="crew-text-c">
-                <h3 class="crew-name">Gregson</h3>
-                <p>
-                  Gregson is the newest member of the House of Handsome Norwich
-                  team and joins us on Sunday's at the shop. Also a graduate
-                  from The London School of Barbering, he is always perfecting
-                  techniques.
-                </p>
+              <div class="crew-card-c">
+                <div class="crew-img-c">
+                  <img
+                    class="crew-img-two"
+                    src="/rayul-_M6gy9oHgII-unsplash.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="crew-text-c">
+                  <h3 class="crew-name">Gregson</h3>
+                  <p>
+                    Gregson is the newest member of the House of Handsome
+                    Norwich team and joins us on Sunday's at the shop. Also a
+                    graduate from The London School of Barbering, he is always
+                    perfecting techniques.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -203,7 +216,6 @@
             </div>
             <div class="more-info">
               <p>The best haircut that we can offer!</p>
-              <a>Book!</a>
             </div>
           </div>
           <div class="services-card" data-set="1">
@@ -225,7 +237,6 @@
               <p>
                 The best haircut that we can offer for anyone with a stident ID!
               </p>
-              <a>Book!</a>
             </div>
           </div>
           <div class="services-card" data-set="1">
@@ -248,7 +259,6 @@
                 The best haircut that we can offer for people over the age of
                 55!
               </p>
-              <a>Book!</a>
             </div>
           </div>
           <div class="services-card" data-set="1">
@@ -271,7 +281,6 @@
                 The best haircut that we can offer for anyone under the age of
                 12!
               </p>
-              <a>Book!</a>
             </div>
           </div>
           <div class="services-card" data-set="1">
@@ -294,10 +303,10 @@
                 Basic trim for your beard so you leave the barbers looking the
                 best you can!
               </p>
-              <a>Book!</a>
             </div>
           </div>
         </div>
+        <a>Book</a>
       </section>
       <section class="section gallery" id="testimonials">
         <h2>Testimonals</h2>
@@ -322,39 +331,19 @@
           </div>
         </div>
       </section>
-      <!-- <section class="section testimonials">
-        <h2>Testimonals</h2>
-        <div class="test-c">
-          <div class="test-card">
-            <p class="test-quote">
-              "It is always a pleasure to go in and see Neale and the rest of
-              the friendly crew.
-            </p>
-            <p class="test-name">Stuart</p>
-          </div>
-          <div class="test-card">
-            <p class="test-quote">
-              Awesome haircut and really impressed with the incredibly high
-              standard of cleanliness
-            </p>
-            <p class="test-name">Lee</p>
-          </div>
-          <div class="test-card">
-            <p class="test-quote">The best barbershop in Norwich!</p>
-            <p class="test-name">Jack</p>
-          </div>
-        </div>
-      </section> -->
       <section class="section contact-us" id="contact-us">
-        <h2>Contact Us</h2>
-        <div class="contact-us-c">
-          <p>
-            17 Gloucester Street, Norwich, Norfolk, England, United Kingdom, NR2
-            2DX
-          </p>
-          <p>houseofhandsomenorwich@gmail.com</p>
-          <p>01603 762 177</p>
+        <div class="contact-container-text">
+          <h2>Contact Us</h2>
+          <div class="contact-us-c">
+            <p>
+              17 Gloucester Street, Norwich, Norfolk, England, United Kingdom,
+              NR2 2DX
+            </p>
+            <p>houseofhandsomenorwich@gmail.com</p>
+            <p>01603 762 177</p>
+          </div>
         </div>
+
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d453.62144355537595!2d1.2774764395448417!3d52.622978331095794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d9e15a4618090b%3A0x9035c64bc4fb9d08!2sHouse%20of%20Handsome!5e0!3m2!1sen!2suk!4v1693738082308!5m2!1sen!2suk"
           width="100%"
@@ -372,6 +361,7 @@
         <ul>
           <li><a href="#hero">Home</a></li>
           <li><a href="#about-us">About Us</a></li>
+          <li><a href="#crew">Crew</a></li>
           <li><a href="#services">Services</a></li>
           <li><a href="#gallery">Gallery</a></li>
           <li><a href="#testimonials">Testimonials</a></li>
