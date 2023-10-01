@@ -71,7 +71,7 @@ iframe {
 
 .hero {
   height: 100vh;
-  background-image: url(/blackwhitebarb.jpg);
+  background-image: url(./blackwhitebarb.jpg);
   background-repeat: none;
   background-size: cover;
   background-position: 50%;
@@ -412,19 +412,19 @@ footer {
 }
 
 .services-card:nth-child(1)::after {
-  background-image: url(/john-karlo-mendoza-idzUojjazCg-unsplash.webp);
+  background-image: url(./john-karlo-mendoza-idzUojjazCg-unsplash.webp);
 }
 .services-card:nth-child(2)::after {
-  background-image: url(/BWStudent.webp);
+  background-image: url(./BWStudent.webp);
 }
 .services-card:nth-child(3)::after {
-  background-image: url(/BWSenior.webp);
+  background-image: url(./BWSenior.webp);
 }
 .services-card:nth-child(4)::after {
-  background-image: url(/BWkid.webp);
+  background-image: url(./BWkid.webp);
 }
 .services-card:nth-child(5)::after {
-  background-image: url(/arthur-humeau-Twd3yaqA2NM-unsplash.webp);
+  background-image: url(./arthur-humeau-Twd3yaqA2NM-unsplash.webp);
 }
 
 .open.services-card:nth-child(odd):after {
@@ -526,7 +526,7 @@ footer {
 
 .gallery {
   height: 70vh;
-  background-image: url(/insidebarberdarker.jpg);
+  background-image: url(./insidebarberdarker.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   padding: 1rem;
