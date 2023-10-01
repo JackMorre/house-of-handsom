@@ -71,7 +71,7 @@ iframe {
 
 .hero {
   height: 100vh;
-  background-image: url(./blackwhitebarb.jpg);
+  background-image: url(./blackwhitebarb.webp);
   background-repeat: none;
   background-size: cover;
   background-position: 50%;
@@ -526,7 +526,7 @@ footer {
 
 .gallery {
   height: 70vh;
-  background-image: url(./insidebarberdarker.jpg);
+  background-image: url(./insidebarberdarker.webp);
   background-size: cover;
   background-repeat: no-repeat;
   padding: 1rem;
