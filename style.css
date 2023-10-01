@@ -440,7 +440,7 @@ footer {
 }
 
 .services-card svg {
-  fill: var(--dark);
+  fill: #0a0a0a;
   margin-right: 10px;
   z-index: 10;
   transform: rotate(0deg);
@@ -492,11 +492,11 @@ footer {
 .more-info p {
   font-size: 1rem;
   font-weight: 700;
-  color: var(--dark);
+  color: #0a0a0a;
 }
 
 .title {
-  color: var(--dark);
+  color: #0a0a0a;
   font-family: var(--main-font-fam);
   font-weight: 700;
   margin-right: auto;
@@ -506,7 +506,7 @@ footer {
 
 .basic-info p {
   font-size: 1.5rem;
-  color: var(--dark);
+  color: #0a0a0a;
   /* background-color: var(--ten); */
   padding: 2px 5px;
   border-radius: 10px;
