@@ -73,6 +73,44 @@ serviceCards.forEach((card) => {
   });
 });
 
+const turnServicesOn = function () {
+  Array.from(document.querySelectorAll(".basic-info")).forEach((element) => {
+    const panel = element.nextElementSibling;
+    if (this.screen.width > 640) {
+      if (element.classList.contains("turn") === true) {
+      } else if (element.classList.contains("turn") === false) {
+        element.classList.add("turn");
+      } else return;
+
+      if (panel.style.height) {
+        // panel.style.padding = null;
+      } else {
+        // panel.style.height = panel.scrollHeight + "px";
+        // element.style.marginBottom = "1rem";
+        element.parentElement.classList.add("open");
+        // panel.style.padding = "0 0 1rem 0";
+      }
+    } else {
+      element.classList.remove("turn");
+      panel.style.height = null;
+      element.style.marginBottom = "0px";
+      element.parentElement.classList.remove("open");
+    }
+  });
+};
+
+turnServicesOn();
+window.addEventListener("resize", function (e) {
+  e.preventDefault();
+  turnServicesOn();
+  console.log();
+  if (this.window.innerWidth >= 1024) {
+    container.style.width = "unset";
+  } else if (this.window.innerWidth < 1024) {
+    container.style.width = `${cardArray.length}00vw`;
+  }
+});
+
 //get the width for how many cards there are
 container.style.width = `${cardArray.length}00vw`;
 //gets the divided amountmso each card can fit
@@ -135,32 +173,3 @@ rightArrow.addEventListener("click", (e) => {
   e.preventDefault();
   clickArrow("right");
 });
-
-const turnServicesOn = function () {
-  Array.from(document.querySelectorAll(".basic-info")).forEach((element) => {
-    const panel = element.nextElementSibling;
-    if (this.screen.width > 640) {
-      if (element.classList.contains("turn") === true) {
-      } else if (element.classList.contains("turn") === false) {
-        element.classList.add("turn");
-      } else return;
-
-      if (panel.style.height) {
-        // panel.style.padding = null;
-      } else {
-        // panel.style.height = panel.scrollHeight + "px";
-        // element.style.marginBottom = "1rem";
-        element.parentElement.classList.add("open");
-        // panel.style.padding = "0 0 1rem 0";
-      }
-    } else {
-      element.classList.remove("turn");
-      panel.style.height = null;
-      element.style.marginBottom = "0px";
-      element.parentElement.classList.remove("open");
-    }
-  });
-};
-
-turnServicesOn();
-window.addEventListener("resize", turnServicesOn);

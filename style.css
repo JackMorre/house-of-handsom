@@ -60,6 +60,10 @@ body.darken::before {
   z-index: 5;
 }
 
+iframe {
+  width: 100%;
+}
+
 .hero {
   /* padding: 1rem; */
   background-color: var(--fifty);
@@ -92,13 +96,18 @@ body.darken::before {
   padding: var(--text-gap);
 }
 
+.hero h1 {
+  color: var(--fifty);
+}
+
 .hero-text a {
   background-color: var(--ten);
   text-decoration: none;
   align-self: center;
   padding: var(--btn-padding);
   border-radius: var(--btn-radius);
-  color: var(--thirty);
+  color: var(--fifty);
+  border: 2px solid var(--ten);
 }
 
 header {
@@ -110,7 +119,7 @@ header {
 
 header p {
   font-size: 2rem;
-  color: var(--thirty);
+  color: var(--fifty);
   position: static;
   z-index: 100;
 }
@@ -146,7 +155,7 @@ header p {
 
 .header-nav ul li a {
   text-decoration: none;
-  color: var(--thirty);
+  color: var(--fifty);
 }
 
 .book-btn {
@@ -156,10 +165,11 @@ header p {
   align-self: center;
   padding: var(--btn-padding);
   border-radius: var(--btn-radius);
+  border: 2px solid var(--ten);
 }
 
 .header-nav .socials svg {
-  fill: var(--thirty);
+  fill: var(--fifty);
 }
 
 header.open nav {
@@ -183,7 +193,7 @@ button {
 }
 
 svg {
-  fill: var(--thirty);
+  fill: var(--fifty);
 }
 
 .section {
@@ -361,7 +371,7 @@ footer {
 .service-card-c::after {
   content: "";
   position: absolute;
-  bottom: -210px;
+  bottom: -218px;
   left: 0;
   height: 100px;
   width: 100%;
@@ -468,17 +478,19 @@ footer {
 
 .services a {
   background-color: var(--ten);
-  color: var(--thirty);
+  color: var(--fifty);
   padding: 0.5rem 1rem;
   border-radius: var(--btn-radius);
   display: block;
   width: 70%;
   text-transform: uppercase;
   font-weight: 700;
+  text-decoration: none;
+  border: 2px solid var(--ten);
 }
 
 .more-info p {
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 700;
   color: var(--dark);
 }
@@ -572,8 +584,14 @@ footer {
 }
 
 footer {
-  background-color: var(--thirty);
+  background-color: var(--dark);
   padding: 1rem 0;
+  gap: var(--text-gap);
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
   gap: var(--text-gap);
 }
 
@@ -600,11 +618,19 @@ footer ul li a {
 
 .socials svg {
   fill: var(--fifty);
+  transition: fill 0.3s ease-in-out;
+}
+
+.socials svg:hover {
+  fill: var(--thirty);
 }
 
 @media only screen and (min-width: 640px) {
   p {
     font-size: 1.2rem;
+  }
+  .service-card-c::after {
+    bottom: -248px;
   }
   .hero {
     background-position: 25%;
@@ -656,7 +682,7 @@ footer ul li a {
 
   .services-card {
     width: 48%;
-    height: 150px;
+    height: 100px;
     justify-content: space-around;
     box-shadow: var(--box-shadow);
   }
@@ -703,6 +729,10 @@ footer ul li a {
     flex-direction: row;
   }
 
+  .service-card-c::after {
+    bottom: -227px;
+  }
+
   .test-card {
     flex-grow: 1;
     text-align: center;
@@ -721,6 +751,19 @@ footer ul li a {
 }
 
 @media only screen and (min-width: 1024px) {
+  .book-btn,
+  .hero-btn,
+  .services a {
+    transition: all 0.3s ease-in-out;
+  }
+
+  .book-btn:hover,
+  .hero-btn:hover,
+  .services a:hover {
+    background-color: rgba(255, 0, 0, 0);
+    border: 2px solid var(--thirty);
+    color: var(--thirty);
+  }
   .mob-nav-btn {
     display: none;
   }
@@ -731,7 +774,11 @@ footer ul li a {
 
   header,
   .hero-text,
-  .about-text-c {
+  .about-text-c,
+  .max-crew-container,
+  .services,
+  .gallery,
+  .contact-us {
     max-width: 1050px;
     margin: 0 auto;
   }
@@ -750,24 +797,23 @@ footer ul li a {
 
   .header-nav ul li a:link,
   .header-nav ul li a:visited {
-    color: var(--thirty);
+    color: var(--fifty);
     transition: color 0.3s ease-in-out;
     cursor: pointer;
   }
 
   .header-nav ul li a:hover,
   .header-nav ul li a:active {
-    color: var(--fifty);
+    color: var(--thirty);
   }
 
   .header-nav .socials svg {
     cursor: pointer;
     transition: fill 0.3s ease;
-    fill: var(--thirty);
   }
 
   .header-nav .socials svg:hover {
-    fill: var(--fifty);
+    fill: var(--thirty);
   }
 
   .about-text-c {
@@ -788,5 +834,79 @@ footer ul li a {
 
   .crew-container svg {
     display: none;
+  }
+
+  .max-crew-container {
+    justify-content: space-around;
+  }
+
+  .crew-card-c {
+    width: 100%;
+  }
+
+  .crew-card {
+    width: 25%;
+    padding: unset;
+  }
+
+  .crew-img-c {
+    width: 200px;
+    height: 200px;
+  }
+
+  .crew-img-c img {
+    width: 235px;
+  }
+
+  .services-card {
+    width: 30%;
+  }
+
+  .service-card-c::after {
+    bottom: -225px;
+  }
+
+  .gallery {
+    height: 300px;
+  }
+
+  .contact-us {
+    flex-direction: row;
+    padding: 2rem;
+  }
+
+  iframe,
+  .contact-container-text {
+    width: 50%;
+  }
+
+  footer {
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 0;
+  }
+
+  .footer-container {
+    max-width: 1050px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--header-gap);
+  }
+
+  .footer-container nav ul {
+    display: flex;
+    gap: var(--text-gap);
+  }
+
+  .footer-container nav ul a:link,
+  .footer-container nav ul a:visited {
+    transition: color 0.3s ease-in-out;
+    color: var(--fifty);
+  }
+
+  .footer-container nav ul a:active,
+  .footer-container nav ul a:hover {
+    color: var(--thirty);
   }
 }
